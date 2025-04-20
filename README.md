@@ -53,7 +53,10 @@ The model was trained on the Chest X-Ray Pneumonia dataset, containing:
 - Resized to 256×256 for high-resolution and 64×64 for low-resolution inputs
 - Normalized to the range [-1, 1]
 
-[IMAGE: Sample Dataset Images]
+- **Input**: Low-resolution medical image.
+- ![Low-Resolution](images/lr (1).jpg)
+- **Output**: High-resolution reconstructed image.
+![High-Resolution](images/hr (1).jpg)
 
 ## Training Methodology
 
