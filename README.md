@@ -55,9 +55,9 @@ The model was trained on the Chest X-Ray Pneumonia dataset, containing:
 
 ## Dataset Image
 - **Input**: Low-resolution medical image.
-![Figure-2: Low-Resolution](images/lr(1).jpg)
+![Figure-2: Low-Resolution](images/LR.jpg)
 - **Output**: High-resolution reconstructed image.
-![Figure-3: High-Resolution](images/hr(1).jpg)
+![Figure-3: High-Resolution](images/HR.jpg)
 
 ## Training Methodology
 
@@ -76,7 +76,6 @@ Training progress was monitored through:
 - SSIM (Structural Similarity Index) metrics
 - Visual assessment of generated samples
 
-![Figure-4: Training Progress Chart (PSNR, SSIM, D & G_Loss)](images/charts_1000_7.png)
 
 ## Results
 
@@ -88,7 +87,7 @@ Our model achieves state-of-the-art performance for medical image super-resoluti
 - Maximum SSIM: 0.793
 - Realistic preservation of clinically important features
 
-![Figure-5: Gnerated Sample Images](images/gen_img_1000_7.png)
+![Figure-4: Gnerated Sample Images](images/gen_img_1000_7.png)
 
 ## Progression of Training
 
@@ -107,7 +106,7 @@ The model shows clear quality improvement throughout training:
 | 821   | 26.81     | 0.778| Enhanced mediastinal structures |
 | 921   | 28.74     | 0.793| Near-diagnostic quality |
 
-![Figure-6: PSNR and SSIM Progression Images](images/PSNR-.png)
+![Figure-5: PSNR and SSIM Progression Images](images/PSNR-.png)
 
 ## Usage Instructions
 
@@ -165,7 +164,7 @@ The training logs demonstrate steady improvement in both quantitative metrics an
 
 The discriminator loss stabilizes around 9.67-9.68, indicating proper Wasserstein distance estimation, while generator loss decreases steadily from 0.30 to 0.17, showing continuous improvement in generating realistic images.
 
-[IMAGE: Loss Curves]
+![Figure-6: Training Progress Chart (PSNR, SSIM, D & G_Loss)](images/charts_1000_7.png)
 
 ## Technical Implementation
 
@@ -189,7 +188,6 @@ This super-resolution approach has several potential clinical applications:
 
 Validation with medical professionals indicates the super-resolved images maintain diagnostic integrity while significantly improving visibility of subtle features.
 
-[IMAGE: Sample Clinical Application]
 
 ## Acknowledgments
 
@@ -197,15 +195,3 @@ This project was developed by Aditya Yadav, Pravinkumar Gohil, Satwik Chauhan, a
 
 We acknowledge the creators of the Chest X-Ray Pneumonia dataset and the foundational work on Wasserstein GANs and image super-resolution that made this project possible.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/62434810/acd441b4-807a-46c9-99f4-92ad3feecc4e/X3_WC_logs.txt
-[2] https://pplx-res.cloudinary.com/image/private/user_uploads/bkRozItvElOFGvk/Model_Flowchart.jpg
-[3] https://pplx-res.cloudinary.com/image/private/user_uploads/yUiiMplctzNGNzU/System_design.jpg
-[4] https://pplx-res.cloudinary.com/image/private/user_uploads/duevikWdXsMgtdo/PSNR.jpg
-[5] https://pplx-res.cloudinary.com/image/private/user_uploads/SpHmRVDNNZbpamm/gen_img_1000_7.jpg
-[6] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/62434810/25401e9f-09d0-48a9-b147-a646211e155a/X3_WC.ipynb
-[7] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/62434810/50a7a8a5-8ec1-4a6f-a1e3-d3f57b3be6df/WGAN-report.pdf
-[8] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/62434810/9cd8f06b-7354-43a2-8ea8-9af17b0c44ab/ICAIRED-WCGAN_RP.pdf
-
----
-Answer from Perplexity: pplx.ai/share
