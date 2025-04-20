@@ -201,3 +201,5 @@ This project was developed by Pravinkumar Gohil
 
 I acknowledge the creators of the Chest X-Ray Pneumonia dataset and the foundational work on Wasserstein GANs and image super-resolution that made this project possible.
 
+## License
+This project is licensed under the MIT License.
