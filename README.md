@@ -42,7 +42,7 @@ The overall workflow is as follows:
 
 ### Architecture Diagram
 
-![Model Flowchart](Model_Flowchart.jpg-level model flow with generator, discriminator, losses, and feature extraction*[2]
+![Model Flowchart](images/Model_Flowchart.png-level model flow with generator, discriminator, losses, and feature extraction*[2]
 
 ---
 
@@ -182,7 +182,7 @@ To include your own images or diagrams in the README:
 1. **Save images in your repo** (e.g., `images/architecture.png`).
 2. **Reference in Markdown:**
    ```markdown
-   ![Description](images/architecture.png)
+   ![Description](images/Model_Flowchart.png)
    ```
 3. **For side-by-side or grid layouts, use HTML:**
    ```html
