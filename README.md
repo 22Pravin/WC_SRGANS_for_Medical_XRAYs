@@ -53,10 +53,11 @@ The model was trained on the Chest X-Ray Pneumonia dataset, containing:
 - Resized to 256×256 for high-resolution and 64×64 for low-resolution inputs
 - Normalized to the range [-1, 1]
 
+## Dataset Image
 - **Input**: Low-resolution medical image.
-- ![Low-Resolution](images/lr (1).jpg)
+- ![Figure-2: Low-Resolution](images/lr(1).jpg)
 - **Output**: High-resolution reconstructed image.
-![High-Resolution](images/hr (1).jpg)
+![Figure-3: High-Resolution](images/hr(1).jpg)
 
 ## Training Methodology
 
@@ -75,9 +76,11 @@ Training progress was monitored through:
 - SSIM (Structural Similarity Index) metrics
 - Visual assessment of generated samples
 
-[IMAGE: Training Progress Chart]
+![Figure-4: Training Progress Chart (PSNR, SSIM, D & G_Loss)](images/charts_1000_7.png)
 
 ## Results
+
+Visual results demonstrate significant improvement in image quality and detail preservation across training epochs, with early epochs (21-121) showing initial texture formation, mid-range epochs (221-421) developing clear anatomical structures, and later epochs (521-921) refining fine details and contrast.
 
 Our model achieves state-of-the-art performance for medical image super-resolution:
 
@@ -85,9 +88,7 @@ Our model achieves state-of-the-art performance for medical image super-resoluti
 - Maximum SSIM: 0.793
 - Realistic preservation of clinically important features
 
-Visual results demonstrate significant improvement in image quality and detail preservation across training epochs, with early epochs (21-121) showing initial texture formation, mid-range epochs (221-421) developing clear anatomical structures, and later epochs (521-921) refining fine details and contrast.
-
-[IMAGE: Results Comparison Grid]
+![Figure-5: Gnerated Sample Images](images/gen_img_1000_7.png)
 
 ## Progression of Training
 
@@ -106,7 +107,7 @@ The model shows clear quality improvement throughout training:
 | 821   | 26.81     | 0.778| Enhanced mediastinal structures |
 | 921   | 28.74     | 0.793| Near-diagnostic quality |
 
-[IMAGE: PSNR and SSIM Progression Chart]
+![Figure-6: PSNR and SSIM Progression Images](images/PSNR-.png)
 
 ## Usage Instructions
 
