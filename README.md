@@ -6,6 +6,8 @@ This repository contains the implementation of Wasserstein Conditional Generativ
 
 Our approach combines the training stability of Wasserstein GANs with the enhanced feature preservation capabilities of self-attention mechanisms and spectral normalization, resulting in state-of-the-art performance for medical image enhancement.
 
+## Model Architecture Diagram
+
 ![Figure-1: Model Architecture Diagram](images/Model_Flowchart.png)
 
 ## Key Features
@@ -87,6 +89,8 @@ Our model achieves state-of-the-art performance for medical image super-resoluti
 - Maximum SSIM: 0.793
 - Realistic preservation of clinically important features
 
+## Generated Sample Images
+
 ![Figure-4: Gnerated Sample Images](images/gen_img_1000_7.png)
 
 ## Progression of Training
@@ -164,6 +168,8 @@ The training logs demonstrate steady improvement in both quantitative metrics an
 
 The discriminator loss stabilizes around 9.67-9.68, indicating proper Wasserstein distance estimation, while generator loss decreases steadily from 0.30 to 0.17, showing continuous improvement in generating realistic images.
 
+## Loss Curves ( Training Loss, PSNR, SSIM )
+
 ![Figure-6: Training Progress Chart (PSNR, SSIM, D & G_Loss)](images/charts_1000_7.png)
 
 ## Technical Implementation
@@ -191,7 +197,7 @@ Validation with medical professionals indicates the super-resolved images mainta
 
 ## Acknowledgments
 
-This project was developed by Aditya Yadav, Pravinkumar Gohil, Satwik Chauhan, and Zeeshan Modi under the supervision of Ms. Tanvi at Chandigarh University.
+This project was developed by Pravinkumar Gohil
 
-We acknowledge the creators of the Chest X-Ray Pneumonia dataset and the foundational work on Wasserstein GANs and image super-resolution that made this project possible.
+I acknowledge the creators of the Chest X-Ray Pneumonia dataset and the foundational work on Wasserstein GANs and image super-resolution that made this project possible.
 
